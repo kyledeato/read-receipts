@@ -33,6 +33,8 @@
 		<button type="submit" >Submit</button>
 		<a href="/chat">chat</a>
 		</form:form>
+		
+
 </div>
 </main>
 	
