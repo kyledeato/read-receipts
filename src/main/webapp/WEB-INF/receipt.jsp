@@ -21,30 +21,9 @@
 <body>
 	
 	<h1 id="title">READ RECEIPTS</h1>
-	
-	<!-- <h5 id="view"><a href="/receipts">VIEW YOUR RECEIPTS</a></h5> -->
+	<h5 id="view"><a href="/">Go Back</a></h5>
 	<main>
-		<div id="username-page">
-		<div class="username-page-container flex-display justify-center">
-			
-			<form id="usernameForm" name="usernameForm">
-			<h1>READ RECEIPTS</h1>
-			 <h4>CREATE A USERNAME</h4>
-		    <p >---------------------------------------------------------</p>
-				<div class="form-group">
-					<input type="text" id="name" placeholder="Username"
-						autocomplete="off" class="form-control" />
-				</div>
-				<div class="form-group">
-				<p class="line">---------------------------------------------------------</p>
-  				<p class="barcode">Lorem Ipsum</p>
-					<button type="submit" class="accent username-submit">Start
-						Chatting</button>
-				</div>
-			</form>
-		</div>
-	</div>
-	
+
 	<div class="area" >
             <ul class="circles">
                     <li></li>
@@ -62,31 +41,40 @@
             </ul>
     </div>
 
-					<div id="chat-page" class="hidden">
-		<div class="chat-container" >
-			<div class="chat-header">
-				<h2 class="chat-titles">WELCOME TO READ RECEIPTS</h2>
-				<h6 class="chat-titles">THE ONLINE RECEIPT INSPIRED CHAT APPLICATION</h6>
-				<h6 class="chat-titles">PLEASE BE RESPECTFUL OR NOT, BUT STAY COOL</h6>
-			<ul id="messageArea">
-
-			</ul>
-			</div>
-
-
-			<form id="messageForm" name="messageForm" nameForm="messageForm">
-				<div class="form-group">
-					<div class="input-group clearfix">
-						<input type="text" id="message" placeholder="Type a message..."
-							autocomplete="off" class="form-control" />
-						<button type="submit" class="primary" id="send"><span>Send</span></button>
-					</div>
-				</div>
-			</form>
-		</div>
+	<div class="receipt-paper">
+		<h1>Read Receipt</h1>
+		<p class="line">---------------------------------------------------------</p>
+		<ul>
+			<li class="chat-message">
+				<span>kyle:  </span><p>hello everyone</p>
+			</li>
+			<li class="chat-message">
+				<span>Elon Musk:  </span><p>yo should I buy Twitter? haha jk ;p</p>
+			</li>
+			<li class="chat-message">
+				<span>Mark Zuckerbot:  </span><p>I am human trust me bro</p>
+			</li>
+			<li class="chat-message">
+				<span>Bill Gates:  </span><p>I be plotting stuff too, Elon. Lowkey tho</p>
+			</li>
+			<li class="chat-message">
+				<span>Elon Musk:  </span><p>I bought Twitter yall</p>
+			</li>
+			<li class="chat-message">
+				<span>Jack Ma:  </span><p>Alibaba Intelligence. That is all.</p>
+			</li>
+			<li class="chat-message">
+				<span>Elon Musk:  </span><p>Bro what xD</p>
+			</li>
+			<li class="chat-message">
+				<span>Elon Musk:  </span><p>So yeah Coca-Cola huh?</p>
+			</li>
+			
+		</ul>
+		<p class="line">---------------------------------------------------------</p>
+  				<p class="barcode">Lorem Ipsum</p>
+  				<p>PRINT ME</p>
 	</div>
-
-	<img alt="receipt machine" src="./images/typer.png" class="receipt-machine">	
 	<iframe id="music" width="350" height="50" src="https://www.youtube.com/embed/pIw-a2P_DWM?autoplay=true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>	
 	</main>
 </body>

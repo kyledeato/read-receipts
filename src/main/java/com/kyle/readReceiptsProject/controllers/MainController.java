@@ -22,6 +22,11 @@ public class MainController {
 		return "chat.jsp";
 	}
 	
+	@GetMapping("/receipts")
+	public String receipts() {
+		return "receipt.jsp";
+	}
+	
 	@MessageMapping("/chat.register")
 	@SendTo("/topic/public")
 	public Chat register(@Payload Chat chatMessage, SimpMessageHeaderAccessor headerAccessor) {

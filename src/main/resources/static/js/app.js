@@ -11,10 +11,7 @@ var connectingElement = document.querySelector('.connecting');
 var stompClient = null;
 var username = null;
 
-var colors = [
-    '#2196F3', '#32c787', '#00BCD4', '#ff5652',
-    '#ffc107', '#ff85af', '#FF9800', '#39bbb0'
-];
+
 
 function connect(event) {
     username = document.querySelector('#name').value.trim();
@@ -53,6 +50,7 @@ function onError(error) {
 }
 
 
+let arr = [];
 function send(event) {
     var messageContent = messageInput.value.trim();
 
@@ -65,8 +63,10 @@ function send(event) {
 
         stompClient.send("/app/chat.send", {}, JSON.stringify(chatMessage));
         messageInput.value = '';
+        arr.push(chatMessage);
     }
     event.preventDefault();
+    console.log(arr)
 }
 
 
@@ -77,19 +77,15 @@ function onMessageReceived(payload) {
 
     if(message.type === 'JOIN') {
         messageElement.classList.add('event-message');
-        message.content = message.sender + ' joined!';
+        message.content = message.sender + ' entered the chat!';
     } else if (message.type === 'LEAVE') {
         messageElement.classList.add('event-message');
         message.content = message.sender + ' left!';
     } else {
         messageElement.classList.add('chat-message');
 
-        var avatarElement = document.createElement('i');
-        var avatarText = document.createTextNode(message.sender[0]);
-        //avatarElement.appendChild(avatarText);
+       
         
-
-        messageElement.appendChild(avatarElement);
 
         var usernameElement = document.createElement('span');
         var usernameText = document.createTextNode(message.sender);
@@ -109,17 +105,10 @@ function onMessageReceived(payload) {
 }
 
 
-function getAvatarColor(messageSender) {
-    var hash = 0;
-    for (var i = 0; i < messageSender.length; i++) {
-        hash = 31 * hash + messageSender.charCodeAt(i);
-    }
 
-    var index = Math.abs(hash % colors.length);
-    return colors[index];
-}
 
 usernameForm.addEventListener('submit', connect, true)
 messageForm.addEventListener('submit', send, true)
 
-
+localStorage.setItem("saved_chat",arr)
+var storedChat = JSON.parse(localStorage.getItem("saved_chat"));

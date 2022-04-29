@@ -21,3 +21,11 @@ public class chatConfig implements WebSocketMessageBrokerConfigurer{
 		registry.setApplicationDestinationPrefixes("/app");
 	}
 }
+
+
+
+
+
+
+
+
