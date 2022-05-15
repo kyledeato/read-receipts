@@ -22,7 +22,7 @@
 	
 	<h1 id="title">READ RECEIPTS</h1>
 	
-	<!-- <h5 id="view"><a href="/receipts">VIEW YOUR RECEIPTS</a></h5> -->
+	<h5 id="view"><a href="/receipts">VIEW YOUR RECEIPTS</a></h5>
 	<main>
 		<div id="username-page">
 		<div class="username-page-container flex-display justify-center">
@@ -87,7 +87,7 @@
 	</div>
 
 	<img alt="receipt machine" src="./images/typer.png" class="receipt-machine">	
-	<iframe id="music" width="350" height="50" src="https://www.youtube.com/embed/pIw-a2P_DWM?autoplay=true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" autoplay allowfullscreen></iframe>	
+	<iframe id="music" width="350" height="50" src="https://www.youtube.com/embed/Dvu_2lzfd2I?autoplay=1" title="YouTube video player" frameborder="0" autostart="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen;></iframe>	
 	</main>
 </body>
 <!-- For any Bootstrap that uses JS or jQuery-->

@@ -34,7 +34,8 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Create Username](./read-me-images/create.png)
+![Chat](./read-me-images/chat.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
