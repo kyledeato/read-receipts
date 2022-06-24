@@ -1,7 +1,7 @@
 # read-receipts
 > A receipt inspired chat application using Socket-io for users to communicate with each other working with Java and Spring Boot for backend applications.
 
-> Live demo [_here_](http://18.144.173.58/). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](http://3.101.151.205/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
